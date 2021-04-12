@@ -1,7 +1,6 @@
 from curses import wrapper
 from time import sleep
 from subprocess import Popen
-from os import system
 from sys import argv
 try: from PIL.Image import open
 except: from Image import open
