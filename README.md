@@ -6,6 +6,8 @@ Use this to show a video in the terminal (Unicode art)
 
 Run `python3 main.py <video.mp4>` with the terminal **maximized** to display _<video.mp4>_ as ascii art.
 
+If you get `_curses.error: addwstr() returned ERR` try decreasing the font size.
+
 ## Install dependencies
 
 `pip3 install opencv-python Pillow`
