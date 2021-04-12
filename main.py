@@ -11,7 +11,6 @@ def play(window):
 	success, image = vidcap.read()
 	while success:
 		for l in I2T(BytesIO(imencode(".jpg", resize(image, (144, 108), interpolation = 3))[1])).split("\n"):
-		for l in I2T(__file__.replace(".py", ".jpg")).split("\n"):
 			# time.sleep(x) # Use this to change the fps
 			window.addstr(l + "\n")
 			window.refresh()
