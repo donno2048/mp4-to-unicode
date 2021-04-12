@@ -22,7 +22,7 @@ def I2T(File):
 vidcap = VideoCapture(argv[1])
 success, image = vidcap.read()
 while success:
-	imwrite(".jpg", resize(image, (144, 108), interpolation = 3))
-	I2T(".jpg")
+	imwrite(__file__.replace(".py", ".jpg"), resize(image, (144, 108), interpolation = 3))
+	I2T(__file__.replace(".py", ".jpg"))
 	success, image = vidcap.read()
 	print("R")
