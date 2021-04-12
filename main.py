@@ -31,7 +31,7 @@ i = input("Would you like to use vlc to see the original video with sound in the
 while True:
 	if i in ["y", "n"]: break
 	i = input("Please write either \"y\" or \"n\" ")
-if i == "y": pid = Popen(["cvlc", "video.mp4"], stdout=-1, stderr=-1)
+if i == "y": pid = Popen(["cvlc", argv[1]], stdout=-1, stderr=-1)
 sleep(2)
 try: wrapper(play)
 except Exception as e:
