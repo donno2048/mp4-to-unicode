@@ -31,7 +31,6 @@ i = input("Would you like to use vlc to see the original video with sound in the
 while True:
 	if i in ["y", "n"]: break
 	i = input("Please write either \"y\" or \"n\" ")
-system(f"python3 {__file__.replace('main', 'process')} {argv[1]} > {__file__.replace('py', 'txt')}")
 if i == "y": pid = Popen(["cvlc", "video.mp4"], stdout=-1, stderr=-1)
 sleep(2)
 try: wrapper(play)
