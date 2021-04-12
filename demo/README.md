@@ -1,6 +1,6 @@
 This is a demo I used to create a release for this repo.
 
-```dif
+```diff
 - Only works on Windows
 ```
 
