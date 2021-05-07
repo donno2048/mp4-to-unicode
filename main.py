@@ -3,7 +3,7 @@ from time import sleep
 from subprocess import Popen
 from sys import argv
 try: from PIL.Image import open
-except: from Image import open
+except ImportError: from Image import open
 from cv2 import VideoCapture, imencode, resize
 from io import BytesIO
 def play(window):
