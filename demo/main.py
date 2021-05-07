@@ -1,12 +1,12 @@
 from curses import wrapper
 try: from PIL.Image import open
-except: from Image import open
+except ImportError: from Image import open
 from cv2 import VideoCapture, imencode, resize
 from io import BytesIO
 from ctypes import WinDLL
 def play(window):
 	try: from sys import _MEIPASS
-	except:
+	except ImportError::
 		from os.path import abspath
 		_MEIPASS = abspath(".")
 	vidcap = VideoCapture(_MEIPASS + "/video.mp4")
