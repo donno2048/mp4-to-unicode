@@ -6,7 +6,7 @@ from io import BytesIO
 from ctypes import WinDLL
 def play(window):
 	try: from sys import _MEIPASS
-	except ImportError::
+	except ImportError:
 		from os.path import abspath
 		_MEIPASS = abspath(".")
 	vidcap = VideoCapture(_MEIPASS + "/video.mp4")
