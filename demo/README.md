@@ -1,8 +1,7 @@
 This is a demo I used to create a release for this repo.
 
-```diff
-- Only works on Windows
-```
+> **Warning**
+> Only works on Windows
 
 Install _Pyinstaller_ using `pip install pyinstaller` (I assume you have already installed opencv-python and Pillow, if not, see the main README for details)
 
