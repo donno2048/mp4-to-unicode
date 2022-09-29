@@ -1,5 +1,5 @@
 try: from PIL.Image import open
-except: from Image import open
+except ImportError: from Image import open
 from sys import stdout, argv
 from cv2 import VideoCapture, imencode, resize
 from io import BytesIO
